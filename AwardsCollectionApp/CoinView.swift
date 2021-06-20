@@ -30,10 +30,9 @@ struct CoinView: View {
                         
                         .foregroundColor(.yellow)
                         .rotation3DEffect(
-                            .init(degrees: rotation),
+                            Angle(degrees: rotation),
                             axis: (x: 10.0, y: 30.0, z: 15.0)
                         )
-                        
                         .animation(.easeIn)
                 }
                 .offset(
